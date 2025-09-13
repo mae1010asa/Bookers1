@@ -19,11 +19,4 @@ ActiveRecord::Schema.define(version: 2025_09_12_072924) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "lists", force: :cascade do |t|
-    t.string "t"
-    t.string "b"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
 end
