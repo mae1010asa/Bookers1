@@ -44,3 +44,11 @@ p {
 .show {
   margin: 30px 30px;
 }
+
+.flash-message.notice {
+  color: limegreen;
+}
+
+.flash-message.alert {
+  color: red;
+}

@@ -15,7 +15,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully created."
       redirect_to book_path(@book)
     else
-      flash.now[:notice] = "error:can't be blank."
+      flash.now[:alert] = "error:can't be blank."
       @books = Book.all
       render :index
     end
@@ -36,7 +36,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to book_path(@book.id)
     else
-      flash.now[:notice] = "error:can't be blank."
+      flash.now[:alert] = "error:can't be blank."
       @books = Book.all
       render :edit
     end
